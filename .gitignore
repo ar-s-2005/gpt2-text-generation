@@ -1,0 +1,10 @@
+
+
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+HF_TOKEN
+gpt2-finetuned/
+
