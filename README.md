@@ -1,17 +1,15 @@
-
 # GPT-2 Text Generation and Fine-Tuning
 
-A Python project demonstrating how to fine-tune a pretrained GPT-2 language model on a small text dataset and generate text from custom prompts.
+A Python project demonstrating how to fine-tune a pretrained GPT-2 language model for text generation using Hugging Face Transformers.
 
 ## Features
-
-- Fine-tunes a pretrained GPT-2 model.
-- Loads training text from `data.txt`.
+- Fine-tunes a pretrained GPT-2 model on a custom text dataset.
+- Loads training data from `data.txt`.
 - Generates text interactively using `generate.py`.
 - Saves the fine-tuned model locally.
+- Uses PyTorch and Hugging Face libraries.
 
 ## Technologies
-
 - Python
 - PyTorch
 - Hugging Face Transformers
@@ -19,7 +17,7 @@ A Python project demonstrating how to fine-tune a pretrained GPT-2 language mode
 
 ## Setup
 
-Install the dependencies:
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -27,28 +25,25 @@ pip install -r requirements.txt
 
 ## Train the Model
 
-Make sure `data.txt` contains non-empty training examples, then run:
-
 ```bash
 python train.py
 ```
 
 ## Generate Text
 
-After training completes, run:
-
 ```bash
 python generate.py
 ```
 
-Enter a starting sentence when prompted. Type `exit` to quit.
+## Dataset
+
+The training examples are stored in `data.txt`. The current dataset is small and intended for experimentation.
 
 ## Limitations
 
-This project fine-tunes a pretrained GPT-2 model; it does not train a language model from scratch. The current dataset is small, so generated output may be repetitive or inaccurate.
+This project fine-tunes an existing GPT-2 model; it does not train a language model from scratch. The small dataset may result in repetitive or inaccurate generated text.
 
 ## Future Improvements
-
 - Expand and improve the training dataset.
 - Compare base GPT-2 and fine-tuned outputs.
 - Add automated tests and training metrics.
